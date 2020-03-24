@@ -20,7 +20,9 @@ class Moviecontainer extends Component {
   render() {
     return (
       <div>
-      <Search/>
+        <Stars count = {this.props.movierate} handleChangeRating={this.props.handleChangeRating}/>
+      <Search />
+      
 
       <div className='container'>
         {this.props.movielist
@@ -30,14 +32,13 @@ class Moviecontainer extends Component {
         )
         .map(el => (
           <div>
-                      <Stars count={el.rating}/>
-
+          <Stars count={el.rating}/>
           <MovieCard
             movie={el}
             key={el.id}
             remove={() => this.props.remove(el.id)}
           />
-          <EditMovie/>
+          <EditMovie oldMovie={el}/>
           </div>
             ))}
       </div>
@@ -56,7 +57,9 @@ const mapStateToProps = state => {
 };
 const mapDispatchToProps = dispatch => {
   return {
-    remove: id => dispatch(remove(id))
+    remove: id => dispatch(remove(id)),
+handleChangeRating : payload => dispatch (searchRating(payload))
+
   };
 };
 

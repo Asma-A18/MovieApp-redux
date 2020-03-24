@@ -78,7 +78,7 @@ margin-left: 35px;
 .moviecard  {
   box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3);
   width: 163px;
-  height: 270px;
+  height: 280px;
 }
 
 
@@ -115,8 +115,8 @@ margin-left: 35px;
   height: 30px;
   width: 60px;
   font-size: 10px;
-  margin-left: 100px;
-  margin-top: 10px;
+  margin-left: 80px;
+  margin-top: 9px;
   border-radius: 5px;
   border: solid #fff 0.5px;
   background-color: transparent;
@@ -133,6 +133,7 @@ margin-left: 35px;
   border: solid #fff 0.5px;
   background-color: transparent;
   color: #ffffff;
+  margin-left: 10px;
 }
 
 

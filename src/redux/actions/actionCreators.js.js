@@ -21,6 +21,6 @@ import {
     return { type: SEARCH_RATING, payload };
   };
 
-  export const editMovie = id => {
-    return { type: EDIT_MOVIE, id:id };
+  export const editMovie = (payload, id) => {
+    return { type: EDIT_MOVIE, payload,id };
   };

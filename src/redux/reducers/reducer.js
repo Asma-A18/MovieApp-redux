@@ -30,11 +30,9 @@ import {
             ...state,
             movielist: state.movielist.map(movie =>
               movie.id === action.id
-                ? {...movie,
-                    title: action.title,
-                    year: action.year,
-                    rating: action.rating,
-                    img : action.img
+                ? {...action.payload,
+                  id:action.id
+
                   }
                 : movie
             )

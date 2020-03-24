@@ -14,21 +14,21 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
  class App extends Component {
   constructor(props){
     super(props)
-    this.state = {
-      searchmovie : '',
-      movielist: movielist,
-    
-    }
+    // this.state = {
+    //   searchmovie : '',
+    //   movielist: movielist,
+    // movierate : 1
+    // }
   }
 
  
 
 
-handleChangeRating =(star) =>{
-  this.setState({
-    movierate: star
-  })
-}
+// handleChangeRating =(star) =>{
+//   this.setState({
+//     movierate: star
+//   })
+// }
 
   render() {
 
@@ -36,14 +36,21 @@ handleChangeRating =(star) =>{
     return (
       <div>
         <Router>
-        <Stars count={this.state.movierate} handleChangeRating={this.handleChangeRating}/>
-        <Route exact path="/" component={Moviecontainer} />
+        
+        {/* <Stars   */}
+        {/* // count={this.state.movierate}
+        //  handleChangeRating={this.handleChangeRating}
+         /> */}
+        <Route exact path="/" render={() =>( 
+          <div>
+        <Moviecontainer/>
         <Addmovie/>
+        </div>)} />
+        
         <Withloading/>
         <Switch>
-
         {this.props.movielist.map(el => (
-        <Route key={el.id} exact path={`/${el.id}`} render={() => (
+        <Route key={el.id}  exact path={`/${el.id}`} render={() => (
             <div>
               <Stars count={el.rating}/>
               <Moviedescription movie={el} />
