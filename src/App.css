@@ -1,0 +1,148 @@
+
+body {
+  background-color: #1e2931;
+  color: #fff;
+  font-family: sans-serif;
+
+}
+
+.search:focus {
+box-shadow: 0px  0px  9px 4px  #131b20;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.search {
+  background-color: #131b20;
+  color: #fff;
+  text-align: center;
+  border: none;
+  width: 70%;
+  height: 40px;
+  border-radius: 3px;
+  margin-left: 150px;
+  margin-top: 50px;
+  font-family: sans-serif;
+
+  
+}
+
+.poster{
+ 
+  height: 200px;
+  width: 160px;
+  margin: 0;
+}
+.starsgold{
+  color: gold;
+}
+
+
+
+
+.addmovie-btn{
+  background-color: transparent;
+  width: 165px;
+  height: 200px;
+  font-size: 50px;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+
+
+.moviecard p {
+  padding: 0px;
+  color: #ffffff;
+  width: 150px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.year {
+  margin-top: -20px;
+}
+
+.container{
+  display: grid;
+  grid-gap: 5em;
+  grid-template-columns: repeat(auto-fill, minmax(5em, 23fr));
+  margin-top: 60px;
+margin-left: 35px;
+}
+.moviecard  {
+  box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3);
+  width: 163px;
+  height: 270px;
+}
+
+
+.spinner {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 200px; 
+  margin-top: 300px;
+  margin-left: 600px;
+  animation: spin 2s linear infinite;
+
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.link {
+  color: #ffff;
+  padding-bottom: -30px;
+}
+
+.rbutton{
+  margin-top: 0px;
+  margin-left: 135px;
+  background-color: transparent;
+  border: none;
+}
+
+.dbutton {
+  height: 30px;
+  width: 60px;
+  font-size: 10px;
+  margin-left: 100px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: solid #fff 0.5px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.ebutton{
+
+  height: 30px;
+  width: 60px;
+  font-size: 10px;
+  margin-top: -60px;
+  border-radius: 5px;
+  border: solid #fff 0.5px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+
+.dbutton:hover{
+background-color: #0062cc;
+}
+
+
+svg {
+  width: 80px;
+  height: 80px;
+  margin-top: 30px;
+}
